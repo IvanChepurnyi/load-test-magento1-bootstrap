@@ -1,0 +1,30 @@
+{
+  "name": "ecomdev/magento-1-performance-bootstrap",
+  "description": "Magento 1.0 performance bootstrap test",
+  "license": "MIT",
+  "require": {
+     "ecomdev/magento-varnish": "dev-develop",
+     "ecomdev/magento-1-changes": "*",
+     "inchoo/php7": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Inchoo/Inchoo_PHP7.git"
+    },
+    {
+      "type": "path",
+      "url": "./project"
+    }
+  ],
+  "minimum-stability":"dev",
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true,
+    "prepend-autoloader": true
+  },
+  "extra": {
+    "magento-root-dir": "magento",
+    "auto-append-gitignore": true
+  }
+}

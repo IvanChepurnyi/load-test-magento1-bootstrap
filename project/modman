@@ -1,0 +1,3 @@
+src/theme/layout/local.xml app/design/frontend/benchmark/default/layout/local.xml
+src/theme/etc/theme.xml    app/design/frontend/benchmark/default/etc/theme.xml
+src/etc/cache-config.xml   app/etc/cache-config.xml

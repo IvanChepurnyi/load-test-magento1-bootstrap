@@ -1,0 +1,22 @@
+{
+  "backend": {
+    "default": {
+      "ip": "127.0.0.1",
+      "port": "8080"
+    },
+    "admin": {
+      "ip": "127.0.0.1",
+      "port": "8080",
+      "admin": true,
+      "first_byte_timeout": "6000s",
+      "connect_timeout": "6000s"
+    }
+  },
+  "default_backend_option": {
+    "first_byte_timeout": "60s",
+    "connect_timeout": "5s",
+    "between_bytes_timeout": "2s"
+  },
+  "admin_path": "admin",
+  "offload_header": "X-Forwarded-Proto"
+}
