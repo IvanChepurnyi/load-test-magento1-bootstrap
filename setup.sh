@@ -41,10 +41,15 @@ n98-magerun install --dbHost="$MYSQLHOST" --dbUser="$MYSQLUSER" --dbPass="$MYSQL
     --installationFolder="magento" --baseUrl="http://$domain/" --forceUseDb
 
 cd magento/
+
 n98-magerun config:set design/package/name benchmark
+n98-magerun config:set web/unsecure/base_url http://$domain/
+n98-magerun config:set web/secure/base_url http://$domain/
+n98-magerun config:set dev/template/allow_symlink 1
 n98-magerun config:set dev/template/allow_symlink 1
 n98-magerun config:set catalog/frontend/flat_catalog_category 1
 n98-magerun config:set catalog/frontend/flat_catalog_product 1
+n98-magerun config:set checkout/cart/redirect_to_cart 0
 n98-magerun cache:flush
 n98-magerun cache:enable
 n98-magerun index:reindex catalog_product_flat
