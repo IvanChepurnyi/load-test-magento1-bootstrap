@@ -1,0 +1,23 @@
+<config>
+    <global>
+        <cache>
+            <backend>Cm_Cache_Backend_Redis</backend>
+            <backend_options>
+                <server>127.0.0.1</server>                               <!-- or absolute path to unix socket -->
+                <port>6379</port>
+                <persistent></persistent>                                <!-- Specify unique string to enable persistent connections. E.g.: sess-db0; bugs with phpredis and php-fpm are known: https://github.com/nicolasff/phpredis/issues/70 -->
+                <database>0</database>                                   <!-- Redis database number; protection against accidental data loss is improved by not sharing databases -->
+                <password></password>                                    <!-- Specify if your Redis server requires authentication -->
+                <force_standalone>0</force_standalone>                   <!-- 0 for phpredis, 1 for standalone PHP -->
+                <connect_retries>1</connect_retries>                     <!-- Reduces errors due to random connection failures; a value of 1 will not retry after the first failure -->
+                <read_timeout>10</read_timeout>                          <!-- Set read timeout duration; phpredis does not currently support setting read timeouts -->
+                <automatic_cleaning_factor>0</automatic_cleaning_factor> <!-- Disabled by default -->
+                <compress_data>1</compress_data>                         <!-- 0-9 for compression level, recommended: 0 or 1 -->
+                <compress_tags>1</compress_tags>                         <!-- 0-9 for compression level, recommended: 0 or 1 -->
+                <compress_threshold>20480</compress_threshold>           <!-- Strings below this size will not be compressed -->
+                <compression_lib>gzip</compression_lib>                  <!-- Support gzip, lzf, lz4 (https://github.com/kjdev/php-ext-lz4) or snappy (https://github.com/goatherd/php-snappy) -->
+                <use_lua>0</use_lua>                                     <!-- Set to 1 if Lua scripts should be used for some operations -->
+            </backend_options>
+        </cache>
+    </global>
+</config>

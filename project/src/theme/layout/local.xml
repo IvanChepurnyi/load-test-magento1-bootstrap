@@ -1,0 +1,15 @@
+<layout>
+    <default_esi>
+        <reference name="header">
+            <action method="unsetChild">
+                <blockName>minicart_head</blockName>
+            </action>
+
+            <block name="minicart.wrapper" type="ecomdev_varnish/js_wrapper" as="minicart_head">
+                <action method="setCookie"><block>quote_checksum</block></action>
+                <action method="setAdditionalCookie"><block>segment_checksum</block></action>
+                <action method="setBlockName"><block>minicart_head</block></action>
+            </block>
+        </reference>
+    </default_esi>
+</layout>

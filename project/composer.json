@@ -1,0 +1,12 @@
+{
+  "name": "ecomdev/magento-1-changes",
+  "type": "magento-module",
+  "description": "Magento changes for proper project configuration",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Ivan Chepurnyi"
+    }
+  ]
+}
