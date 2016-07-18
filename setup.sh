@@ -53,5 +53,7 @@ n98-magerun index:reindex catalog_category_flat
 # Install varnish VCL
 php shell/ecomdev-varnish.php vcl:generate -c $dir/config/vcl.json -v 4 > varnish.vcl
 
-varnishadm vcl.load v4 $PWD/varnish.vcl
-varnishadm vcl.use v4
+varnishadm vcl.load m1benchmark $PWD/varnish.vcl
+varnishadm vcl.use m1benchmark
+
+bash $dir/config/media.sh $dir/magento $dir/config/media.set $dir/config/media

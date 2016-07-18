@@ -18,5 +18,6 @@
     "between_bytes_timeout": "2s"
   },
   "admin_path": "admin",
-  "offload_header": "X-Forwarded-Proto"
+  "offload_header": "X-Forwarded-Proto",
+  "refresh_ip": ["33.33.33.1"]
 }

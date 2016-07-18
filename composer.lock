@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e4fe5cb3d1dd494f523ccd0744f71d1d",
-    "content-hash": "f8dcd090cf7f01849b197ec4fe275fe4",
+    "hash": "74c0f99ebdcb6df4d071158df6c2b625",
+    "content-hash": "a90457cbb3b7e54f8f50682fcca4faee",
     "packages": [
         {
             "name": "ecomdev/magento-1-changes",
@@ -29,16 +29,16 @@
         },
         {
             "name": "ecomdev/magento-varnish",
-            "version": "dev-develop",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EcomDev/EcomDev_Varnish.git",
-                "reference": "9aa9401561bf23bdb58303d2349b49499327bd31"
+                "reference": "1d555ff228ea73e9ba02f2d03545be78d94cf746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EcomDev/EcomDev_Varnish/zipball/9aa9401561bf23bdb58303d2349b49499327bd31",
-                "reference": "9aa9401561bf23bdb58303d2349b49499327bd31",
+                "url": "https://api.github.com/repos/EcomDev/EcomDev_Varnish/zipball/1d555ff228ea73e9ba02f2d03545be78d94cf746",
+                "reference": "1d555ff228ea73e9ba02f2d03545be78d94cf746",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 }
             ],
             "description": "Varnish Integration framework for Magento",
-            "time": "2016-06-17 10:44:26"
+            "time": "2016-07-18 02:34:30"
         },
         {
             "name": "eloquent/composer-config-reader",
@@ -645,9 +645,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "ecomdev/magento-varnish": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
