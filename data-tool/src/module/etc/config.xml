@@ -1,0 +1,24 @@
+<config>
+    <modules>
+        <EcomDev_BenchmarkDataTool>
+            <version>1.0.0</version>
+        </EcomDev_BenchmarkDataTool>
+    </modules>
+
+    <global>
+        <models>
+            <ecomdev_benchmarkdatatool>
+                <class>EcomDev_BenchmarkDataTool_Model</class>
+                <resourceModel>ecomdev_benchmarkdatatool_resource</resourceModel>
+            </ecomdev_benchmarkdatatool>
+            <ecomdev_benchmarkdatatool_resource>
+                <class>EcomDev_BenchmarkDataTool_Model_Resource</class>
+                <entities>
+                    <data_index><table>ecomdev_benchmarkdatatool_data_index</table></data_index>
+                    <fix_schedule><table>ecomdev_benchmarkdatatool_fix_schedule</table></fix_schedule>
+                    <category_summary><table>ecomdev_benchmarkdatatool_category_summary</table></category_summary>
+                </entities>
+            </ecomdev_benchmarkdatatool_resource>
+        </models>
+    </global>
+</config>

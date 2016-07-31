@@ -1,0 +1,15 @@
+{
+  "name": "ecomdev/magento-1-data-tool",
+  "type": "magento-module",
+  "description": "Magento data tool for stripping wrong records from database",
+  "license": "MIT",
+  "version": "1.0.0",
+  "require": {
+    "league/csv": "*"
+  },
+  "authors": [
+    {
+      "name": "Ivan Chepurnyi"
+    }
+  ]
+}

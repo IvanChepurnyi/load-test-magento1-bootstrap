@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "74c0f99ebdcb6df4d071158df6c2b625",
-    "content-hash": "a90457cbb3b7e54f8f50682fcca4faee",
+    "hash": "35d5ff275c8f6967453becb45017d082",
+    "content-hash": "1a02296522e3d57c215c88bf32fa41ba",
     "packages": [
         {
             "name": "ecomdev/magento-1-changes",
@@ -262,12 +262,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "8490e828c1678e3bce40df35413d7b746b764085"
+                "reference": "c269bdaa37cd7343c86773d9e9d70ced82473a45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/8490e828c1678e3bce40df35413d7b746b764085",
-                "reference": "8490e828c1678e3bce40df35413d7b746b764085",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/c269bdaa37cd7343c86773d9e9d70ced82473a45",
+                "reference": "c269bdaa37cd7343c86773d9e9d70ced82473a45",
                 "shasum": ""
             },
             "require": {
@@ -320,7 +320,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2016-06-28 20:00:59"
+            "time": "2016-07-25 23:45:42"
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
@@ -528,12 +528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "139e3be2f16f19babbebcaaed0f6771d98bc9307"
+                "reference": "36e62335caca8a6e909c5c5bac4a8128149911c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/139e3be2f16f19babbebcaaed0f6771d98bc9307",
-                "reference": "139e3be2f16f19babbebcaaed0f6771d98bc9307",
+                "url": "https://api.github.com/repos/symfony/console/zipball/36e62335caca8a6e909c5c5bac4a8128149911c9",
+                "reference": "36e62335caca8a6e909c5c5bac4a8128149911c9",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +580,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-30 18:17:12"
+            "time": "2016-07-30 07:20:35"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -642,7 +642,85 @@
             "time": "2016-06-29 14:58:48"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "ecomdev/magento-1-data-tool",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "./data-tool",
+                "reference": "236d0af094b73da17cd3f472c27414c0fbb76880",
+                "shasum": null
+            },
+            "type": "magento-module",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Chepurnyi"
+                }
+            ],
+            "description": "Magento data tool for stripping wrong records from database"
+        },
+        {
+            "name": "league/csv",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/csv.git",
+                "reference": "8a20c56144effa552a8cba5d8c626063222975b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/8a20c56144effa552a8cba5d8c626063222975b7",
+                "reference": "8a20c56144effa552a8cba5d8c626063222975b7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.9",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Csv data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "write"
+            ],
+            "time": "2016-07-25 06:51:46"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],

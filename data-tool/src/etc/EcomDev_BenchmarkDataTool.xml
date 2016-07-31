@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <EcomDev_BenchmarkDataTool>
+            <active>true</active>
+            <codePool>local</codePool>
+        </EcomDev_BenchmarkDataTool>
+    </modules>
+</config>
