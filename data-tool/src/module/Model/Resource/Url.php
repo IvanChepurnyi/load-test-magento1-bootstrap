@@ -33,6 +33,11 @@ class EcomDev_BenchmarkDataTool_Model_Resource_Url
                 . ' and url.category_id IS NUll and url.is_system = 1',
                 []
             )
+            ->join(
+                ['inventory' => $this->getTable('cataloginventory/stock_status')],
+                'inventory.product_id = index.entity_id and inventory.stock_status = 1',
+                []
+            )
             ->columns([
                 'product_id' => 'index.entity_id',
                 'url' => 'url.request_path'
