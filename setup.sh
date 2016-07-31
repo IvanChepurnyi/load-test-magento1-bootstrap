@@ -4,7 +4,8 @@ dir=$(dirname $(readlink -f $0))
 path=$(basename $dir)
 database=$1
 domain=$2
-
+databaseVersion=$3
+version=$4
 
 if [[ $database == "" ]]
 then
@@ -18,6 +19,16 @@ then
     exit 1
 fi
 
+if [[ $databaseVersion == "" ]]
+then
+    databaseVersion=""
+fi
+
+if [[ $version == "" ]]
+then
+    version="1.9.2.4"
+fi
+
 cd $dir
 
 wget -qO- https://magento.mirror.hypernode.com/releases/magento-1.9.2.4.tar.gz | tar xfz -
@@ -28,12 +39,22 @@ rm ../public/*.txt
 rmdir ../public
 ln -sf $path/magento ../public
 
+databaseFile=db/data.sql.gz
+
+if [ -f $dir/db/data-$databaseVersion-$version.sql.gz ]
+then
+   databaseFile=$dir/db/data-$databaseVersion.sql.gz
+elif [ -f $dir/db/data-$databaseVersion.sql.gz ]
+then
+   databaseFile=$dir/db/data-$databaseVersion.sql.gz
+fi
+
 # Import database
 mysql -e "drop database if exists $database; create database $database;"
 MYSQLPASSWORD=$(awk -F "=" '/password/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
 MYSQLUSER=$(awk -F "=" '/user/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
 MYSQLHOST=$(awk -F "=" '/host/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
-gunzip < $dir/db/data.sql.gz | mysql $database
+gunzip < $databaseFile | mysql $database
 
 # Install magento configure it
 n98-magerun install --dbHost="$MYSQLHOST" --dbUser="$MYSQLUSER" --dbPass="$MYSQLPASSWORD" --dbName="$database" \
@@ -46,12 +67,12 @@ n98-magerun config:set design/package/name benchmark
 n98-magerun config:set web/unsecure/base_url http://$domain/
 n98-magerun config:set web/secure/base_url http://$domain/
 n98-magerun config:set dev/template/allow_symlink 1
-n98-magerun config:set dev/template/allow_symlink 1
 n98-magerun config:set catalog/frontend/flat_catalog_category 1
 n98-magerun config:set catalog/frontend/flat_catalog_product 1
-n98-magerun config:set checkout/cart/redirect_to_cart 0
 n98-magerun cache:flush
 n98-magerun cache:enable
+
+# We have to re-index only flat and category index, as others are up-to date during install process
 n98-magerun index:reindex catalog_product_flat
 n98-magerun index:reindex catalog_category_flat
 

@@ -1,0 +1,1388 @@
+{
+    "simple": {
+        "label": "Simple Product",
+        "total": "20000",
+        "enabled": "19366",
+        "visible_in_catalog": "2561",
+        "visible_in_search": "2561",
+        "in_category": "2252",
+        "in_configurable": "19068",
+        "position_summary": {
+            "direct": {
+                "type": "direct",
+                "avg_number_in_category": "57.2250",
+                "max_number_in_category": "74",
+                "min_number_in_category": "39",
+                "min_position_in_category": "1",
+                "max_position_in_category": "122",
+                "avg_position_in_category": "49.6000"
+            },
+            "anchor": {
+                "type": "anchor",
+                "avg_number_in_category": "229.3750",
+                "max_number_in_category": "241",
+                "min_number_in_category": "210",
+                "min_position_in_category": "20007",
+                "max_position_in_category": "100140",
+                "avg_position_in_category": "41670.0000"
+            }
+        },
+        "category_summary": {
+            "4": {
+                "category_id": "4",
+                "min_position": "2",
+                "min_id": "738",
+                "max_position": "94",
+                "max_id": "19952",
+                "products_assigned": "57"
+            },
+            "5": {
+                "category_id": "5",
+                "min_position": "2",
+                "min_id": "1118",
+                "max_position": "93",
+                "max_id": "19757",
+                "products_assigned": "66"
+            },
+            "6": {
+                "category_id": "6",
+                "min_position": "1",
+                "min_id": "203",
+                "max_position": "94",
+                "max_id": "19952",
+                "products_assigned": "56"
+            },
+            "7": {
+                "category_id": "7",
+                "min_position": "1",
+                "min_id": "175",
+                "max_position": "86",
+                "max_id": "19846",
+                "products_assigned": "74"
+            },
+            "8": {
+                "category_id": "8",
+                "min_position": "1",
+                "min_id": "596",
+                "max_position": "105",
+                "max_id": "19846",
+                "products_assigned": "60"
+            },
+            "9": {
+                "category_id": "9",
+                "min_position": "1",
+                "min_id": "175",
+                "max_position": "77",
+                "max_id": "19952",
+                "products_assigned": "64"
+            },
+            "10": {
+                "category_id": "10",
+                "min_position": "4",
+                "min_id": "94",
+                "max_position": "103",
+                "max_id": "19526",
+                "products_assigned": "56"
+            },
+            "11": {
+                "category_id": "11",
+                "min_position": "3",
+                "min_id": "489",
+                "max_position": "89",
+                "max_id": "19667",
+                "products_assigned": "62"
+            },
+            "12": {
+                "category_id": "12",
+                "min_position": "1",
+                "min_id": "94",
+                "max_position": "98",
+                "max_id": "19667",
+                "products_assigned": "59"
+            },
+            "13": {
+                "category_id": "13",
+                "min_position": "2",
+                "min_id": "175",
+                "max_position": "110",
+                "max_id": "19526",
+                "products_assigned": "44"
+            },
+            "15": {
+                "category_id": "15",
+                "min_position": "1",
+                "min_id": "573",
+                "max_position": "86",
+                "max_id": "19743",
+                "products_assigned": "56"
+            },
+            "16": {
+                "category_id": "16",
+                "min_position": "2",
+                "min_id": "4",
+                "max_position": "96",
+                "max_id": "19972",
+                "products_assigned": "61"
+            },
+            "17": {
+                "category_id": "17",
+                "min_position": "5",
+                "min_id": "333",
+                "max_position": "91",
+                "max_id": "19972",
+                "products_assigned": "44"
+            },
+            "18": {
+                "category_id": "18",
+                "min_position": "1",
+                "min_id": "333",
+                "max_position": "92",
+                "max_id": "19497",
+                "products_assigned": "58"
+            },
+            "19": {
+                "category_id": "19",
+                "min_position": "8",
+                "min_id": "333",
+                "max_position": "96",
+                "max_id": "19232",
+                "products_assigned": "47"
+            },
+            "20": {
+                "category_id": "20",
+                "min_position": "3",
+                "min_id": "580",
+                "max_position": "92",
+                "max_id": "19829",
+                "products_assigned": "39"
+            },
+            "21": {
+                "category_id": "21",
+                "min_position": "1",
+                "min_id": "455",
+                "max_position": "89",
+                "max_id": "19137",
+                "products_assigned": "60"
+            },
+            "22": {
+                "category_id": "22",
+                "min_position": "2",
+                "min_id": "675",
+                "max_position": "80",
+                "max_id": "19555",
+                "products_assigned": "53"
+            },
+            "23": {
+                "category_id": "23",
+                "min_position": "1",
+                "min_id": "4",
+                "max_position": "119",
+                "max_id": "19829",
+                "products_assigned": "49"
+            },
+            "24": {
+                "category_id": "24",
+                "min_position": "2",
+                "min_id": "1048",
+                "max_position": "115",
+                "max_id": "19972",
+                "products_assigned": "52"
+            },
+            "26": {
+                "category_id": "26",
+                "min_position": "1",
+                "min_id": "512",
+                "max_position": "116",
+                "max_id": "19836",
+                "products_assigned": "57"
+            },
+            "27": {
+                "category_id": "27",
+                "min_position": "1",
+                "min_id": "119",
+                "max_position": "89",
+                "max_id": "19606",
+                "products_assigned": "49"
+            },
+            "28": {
+                "category_id": "28",
+                "min_position": "1",
+                "min_id": "40",
+                "max_position": "85",
+                "max_id": "19723",
+                "products_assigned": "58"
+            },
+            "29": {
+                "category_id": "29",
+                "min_position": "3",
+                "min_id": "65",
+                "max_position": "104",
+                "max_id": "19069",
+                "products_assigned": "62"
+            },
+            "30": {
+                "category_id": "30",
+                "min_position": "4",
+                "min_id": "344",
+                "max_position": "108",
+                "max_id": "19069",
+                "products_assigned": "62"
+            },
+            "31": {
+                "category_id": "31",
+                "min_position": "1",
+                "min_id": "512",
+                "max_position": "92",
+                "max_id": "19606",
+                "products_assigned": "61"
+            },
+            "32": {
+                "category_id": "32",
+                "min_position": "2",
+                "min_id": "304",
+                "max_position": "105",
+                "max_id": "19606",
+                "products_assigned": "49"
+            },
+            "33": {
+                "category_id": "33",
+                "min_position": "1",
+                "min_id": "40",
+                "max_position": "101",
+                "max_id": "18888",
+                "products_assigned": "71"
+            },
+            "34": {
+                "category_id": "34",
+                "min_position": "1",
+                "min_id": "65",
+                "max_position": "110",
+                "max_id": "19055",
+                "products_assigned": "54"
+            },
+            "35": {
+                "category_id": "35",
+                "min_position": "5",
+                "min_id": "304",
+                "max_position": "102",
+                "max_id": "19836",
+                "products_assigned": "47"
+            },
+            "37": {
+                "category_id": "37",
+                "min_position": "1",
+                "min_id": "114",
+                "max_position": "80",
+                "max_id": "19997",
+                "products_assigned": "57"
+            },
+            "38": {
+                "category_id": "38",
+                "min_position": "1",
+                "min_id": "39",
+                "max_position": "83",
+                "max_id": "19102",
+                "products_assigned": "63"
+            },
+            "39": {
+                "category_id": "39",
+                "min_position": "2",
+                "min_id": "129",
+                "max_position": "112",
+                "max_id": "19997",
+                "products_assigned": "54"
+            },
+            "40": {
+                "category_id": "40",
+                "min_position": "3",
+                "min_id": "1134",
+                "max_position": "106",
+                "max_id": "19688",
+                "products_assigned": "69"
+            },
+            "41": {
+                "category_id": "41",
+                "min_position": "2",
+                "min_id": "39",
+                "max_position": "105",
+                "max_id": "19853",
+                "products_assigned": "60"
+            },
+            "42": {
+                "category_id": "42",
+                "min_position": "1",
+                "min_id": "180",
+                "max_position": "103",
+                "max_id": "19126",
+                "products_assigned": "53"
+            },
+            "43": {
+                "category_id": "43",
+                "min_position": "1",
+                "min_id": "181",
+                "max_position": "95",
+                "max_id": "19853",
+                "products_assigned": "51"
+            },
+            "44": {
+                "category_id": "44",
+                "min_position": "1",
+                "min_id": "367",
+                "max_position": "85",
+                "max_id": "19853",
+                "products_assigned": "47"
+            },
+            "45": {
+                "category_id": "45",
+                "min_position": "1",
+                "min_id": "39",
+                "max_position": "106",
+                "max_id": "19519",
+                "products_assigned": "60"
+            },
+            "46": {
+                "category_id": "46",
+                "min_position": "4",
+                "min_id": "114",
+                "max_position": "102",
+                "max_id": "19088",
+                "products_assigned": "52"
+            },
+            "48": {
+                "category_id": "48",
+                "min_position": "7",
+                "min_id": "258",
+                "max_position": "111",
+                "max_id": "19715",
+                "products_assigned": "54"
+            },
+            "49": {
+                "category_id": "49",
+                "min_position": "1",
+                "min_id": "833",
+                "max_position": "98",
+                "max_id": "19924",
+                "products_assigned": "54"
+            },
+            "50": {
+                "category_id": "50",
+                "min_position": "3",
+                "min_id": "151",
+                "max_position": "92",
+                "max_id": "19879",
+                "products_assigned": "73"
+            },
+            "51": {
+                "category_id": "51",
+                "min_position": "1",
+                "min_id": "232",
+                "max_position": "94",
+                "max_id": "19715",
+                "products_assigned": "56"
+            },
+            "52": {
+                "category_id": "52",
+                "min_position": "1",
+                "min_id": "151",
+                "max_position": "107",
+                "max_id": "19924",
+                "products_assigned": "59"
+            },
+            "53": {
+                "category_id": "53",
+                "min_position": "3",
+                "min_id": "151",
+                "max_position": "102",
+                "max_id": "19885",
+                "products_assigned": "60"
+            },
+            "54": {
+                "category_id": "54",
+                "min_position": "1",
+                "min_id": "828",
+                "max_position": "88",
+                "max_id": "19775",
+                "products_assigned": "60"
+            },
+            "55": {
+                "category_id": "55",
+                "min_position": "2",
+                "min_id": "223",
+                "max_position": "84",
+                "max_id": "19830",
+                "products_assigned": "68"
+            },
+            "56": {
+                "category_id": "56",
+                "min_position": "1",
+                "min_id": "430",
+                "max_position": "102",
+                "max_id": "19879",
+                "products_assigned": "62"
+            },
+            "57": {
+                "category_id": "57",
+                "min_position": "1",
+                "min_id": "232",
+                "max_position": "100",
+                "max_id": "19924",
+                "products_assigned": "67"
+            },
+            "59": {
+                "category_id": "59",
+                "min_position": "1",
+                "min_id": "121",
+                "max_position": "103",
+                "max_id": "19611",
+                "products_assigned": "68"
+            },
+            "60": {
+                "category_id": "60",
+                "min_position": "2",
+                "min_id": "307",
+                "max_position": "102",
+                "max_id": "19014",
+                "products_assigned": "62"
+            },
+            "61": {
+                "category_id": "61",
+                "min_position": "4",
+                "min_id": "121",
+                "max_position": "98",
+                "max_id": "19726",
+                "products_assigned": "49"
+            },
+            "62": {
+                "category_id": "62",
+                "min_position": "1",
+                "min_id": "138",
+                "max_position": "96",
+                "max_id": "19699",
+                "products_assigned": "47"
+            },
+            "63": {
+                "category_id": "63",
+                "min_position": "3",
+                "min_id": "138",
+                "max_position": "94",
+                "max_id": "19726",
+                "products_assigned": "55"
+            },
+            "64": {
+                "category_id": "64",
+                "min_position": "1",
+                "min_id": "121",
+                "max_position": "106",
+                "max_id": "19848",
+                "products_assigned": "60"
+            },
+            "65": {
+                "category_id": "65",
+                "min_position": "1",
+                "min_id": "307",
+                "max_position": "107",
+                "max_id": "19090",
+                "products_assigned": "54"
+            },
+            "66": {
+                "category_id": "66",
+                "min_position": "2",
+                "min_id": "517",
+                "max_position": "84",
+                "max_id": "19848",
+                "products_assigned": "59"
+            },
+            "67": {
+                "category_id": "67",
+                "min_position": "3",
+                "min_id": "128",
+                "max_position": "94",
+                "max_id": "19848",
+                "products_assigned": "68"
+            },
+            "68": {
+                "category_id": "68",
+                "min_position": "1",
+                "min_id": "128",
+                "max_position": "103",
+                "max_id": "19609",
+                "products_assigned": "52"
+            },
+            "70": {
+                "category_id": "70",
+                "min_position": "5",
+                "min_id": "902",
+                "max_position": "111",
+                "max_id": "19586",
+                "products_assigned": "65"
+            },
+            "71": {
+                "category_id": "71",
+                "min_position": "1",
+                "min_id": "99",
+                "max_position": "91",
+                "max_id": "19844",
+                "products_assigned": "51"
+            },
+            "72": {
+                "category_id": "72",
+                "min_position": "1",
+                "min_id": "35",
+                "max_position": "103",
+                "max_id": "19832",
+                "products_assigned": "55"
+            },
+            "73": {
+                "category_id": "73",
+                "min_position": "1",
+                "min_id": "169",
+                "max_position": "98",
+                "max_id": "19832",
+                "products_assigned": "52"
+            },
+            "74": {
+                "category_id": "74",
+                "min_position": "1",
+                "min_id": "99",
+                "max_position": "90",
+                "max_id": "19832",
+                "products_assigned": "54"
+            },
+            "75": {
+                "category_id": "75",
+                "min_position": "3",
+                "min_id": "99",
+                "max_position": "93",
+                "max_id": "19777",
+                "products_assigned": "71"
+            },
+            "76": {
+                "category_id": "76",
+                "min_position": "1",
+                "min_id": "135",
+                "max_position": "103",
+                "max_id": "19656",
+                "products_assigned": "56"
+            },
+            "77": {
+                "category_id": "77",
+                "min_position": "4",
+                "min_id": "35",
+                "max_position": "96",
+                "max_id": "19586",
+                "products_assigned": "56"
+            },
+            "78": {
+                "category_id": "78",
+                "min_position": "4",
+                "min_id": "169",
+                "max_position": "102",
+                "max_id": "19656",
+                "products_assigned": "54"
+            },
+            "79": {
+                "category_id": "79",
+                "min_position": "4",
+                "min_id": "216",
+                "max_position": "122",
+                "max_id": "19844",
+                "products_assigned": "60"
+            },
+            "81": {
+                "category_id": "81",
+                "min_position": "1",
+                "min_id": "504",
+                "max_position": "104",
+                "max_id": "19888",
+                "products_assigned": "73"
+            },
+            "82": {
+                "category_id": "82",
+                "min_position": "6",
+                "min_id": "767",
+                "max_position": "112",
+                "max_id": "18811",
+                "products_assigned": "48"
+            },
+            "83": {
+                "category_id": "83",
+                "min_position": "2",
+                "min_id": "409",
+                "max_position": "114",
+                "max_id": "19767",
+                "products_assigned": "65"
+            },
+            "84": {
+                "category_id": "84",
+                "min_position": "1",
+                "min_id": "302",
+                "max_position": "121",
+                "max_id": "19290",
+                "products_assigned": "57"
+            },
+            "85": {
+                "category_id": "85",
+                "min_position": "1",
+                "min_id": "383",
+                "max_position": "106",
+                "max_id": "19779",
+                "products_assigned": "40"
+            },
+            "86": {
+                "category_id": "86",
+                "min_position": "2",
+                "min_id": "767",
+                "max_position": "113",
+                "max_id": "19004",
+                "products_assigned": "61"
+            },
+            "87": {
+                "category_id": "87",
+                "min_position": "1",
+                "min_id": "302",
+                "max_position": "97",
+                "max_id": "19501",
+                "products_assigned": "68"
+            },
+            "88": {
+                "category_id": "88",
+                "min_position": "2",
+                "min_id": "813",
+                "max_position": "110",
+                "max_id": "19888",
+                "products_assigned": "44"
+            },
+            "89": {
+                "category_id": "89",
+                "min_position": "3",
+                "min_id": "1443",
+                "max_position": "99",
+                "max_id": "19745",
+                "products_assigned": "52"
+            },
+            "90": {
+                "category_id": "90",
+                "min_position": "4",
+                "min_id": "383",
+                "max_position": "116",
+                "max_id": "19767",
+                "products_assigned": "56"
+            }
+        }
+    },
+    "grouped": {
+        "label": "Grouped Product",
+        "total": "0",
+        "enabled": "0",
+        "visible_in_catalog": "0",
+        "visible_in_search": "0",
+        "in_category": "0",
+        "in_configurable": "0",
+        "position_summary": [],
+        "category_summary": []
+    },
+    "configurable": {
+        "label": "Configurable Product",
+        "total": "5000",
+        "enabled": "4858",
+        "visible_in_catalog": "5000",
+        "visible_in_search": "5000",
+        "in_category": "3318",
+        "in_configurable": "0",
+        "position_summary": {
+            "direct": {
+                "type": "direct",
+                "avg_number_in_category": "100.8750",
+                "max_number_in_category": "127",
+                "min_number_in_category": "78",
+                "min_position_in_category": "1",
+                "max_position_in_category": "127",
+                "avg_position_in_category": "50.5500"
+            },
+            "anchor": {
+                "type": "anchor",
+                "avg_number_in_category": "403.1250",
+                "max_number_in_category": "434",
+                "min_number_in_category": "382",
+                "min_position_in_category": "20007",
+                "max_position_in_category": "100128",
+                "avg_position_in_category": "42246.0000"
+            }
+        },
+        "category_summary": {
+            "4": {
+                "category_id": "4",
+                "min_position": "1",
+                "min_id": "20102",
+                "max_position": "94",
+                "max_id": "24987",
+                "products_assigned": "94"
+            },
+            "5": {
+                "category_id": "5",
+                "min_position": "2",
+                "min_id": "20002",
+                "max_position": "95",
+                "max_id": "24941",
+                "products_assigned": "95"
+            },
+            "6": {
+                "category_id": "6",
+                "min_position": "1",
+                "min_id": "20070",
+                "max_position": "93",
+                "max_id": "24998",
+                "products_assigned": "95"
+            },
+            "7": {
+                "category_id": "7",
+                "min_position": "1",
+                "min_id": "20093",
+                "max_position": "87",
+                "max_id": "24987",
+                "products_assigned": "87"
+            },
+            "8": {
+                "category_id": "8",
+                "min_position": "1",
+                "min_id": "20002",
+                "max_position": "103",
+                "max_id": "24974",
+                "products_assigned": "105"
+            },
+            "9": {
+                "category_id": "9",
+                "min_position": "1",
+                "min_id": "20077",
+                "max_position": "78",
+                "max_id": "24759",
+                "products_assigned": "78"
+            },
+            "10": {
+                "category_id": "10",
+                "min_position": "1",
+                "min_id": "20009",
+                "max_position": "101",
+                "max_id": "24941",
+                "products_assigned": "105"
+            },
+            "11": {
+                "category_id": "11",
+                "min_position": "2",
+                "min_id": "20078",
+                "max_position": "92",
+                "max_id": "24817",
+                "products_assigned": "92"
+            },
+            "12": {
+                "category_id": "12",
+                "min_position": "1",
+                "min_id": "20009",
+                "max_position": "102",
+                "max_id": "24974",
+                "products_assigned": "102"
+            },
+            "13": {
+                "category_id": "13",
+                "min_position": "1",
+                "min_id": "20002",
+                "max_position": "115",
+                "max_id": "24998",
+                "products_assigned": "115"
+            },
+            "15": {
+                "category_id": "15",
+                "min_position": "2",
+                "min_id": "20087",
+                "max_position": "90",
+                "max_id": "24944",
+                "products_assigned": "90"
+            },
+            "16": {
+                "category_id": "16",
+                "min_position": "3",
+                "min_id": "20280",
+                "max_position": "96",
+                "max_id": "24890",
+                "products_assigned": "96"
+            },
+            "17": {
+                "category_id": "17",
+                "min_position": "1",
+                "min_id": "20006",
+                "max_position": "90",
+                "max_id": "24977",
+                "products_assigned": "91"
+            },
+            "18": {
+                "category_id": "18",
+                "min_position": "2",
+                "min_id": "20071",
+                "max_position": "91",
+                "max_id": "24977",
+                "products_assigned": "93"
+            },
+            "19": {
+                "category_id": "19",
+                "min_position": "1",
+                "min_id": "20006",
+                "max_position": "98",
+                "max_id": "24944",
+                "products_assigned": "98"
+            },
+            "20": {
+                "category_id": "20",
+                "min_position": "1",
+                "min_id": "20056",
+                "max_position": "92",
+                "max_id": "24930",
+                "products_assigned": "92"
+            },
+            "21": {
+                "category_id": "21",
+                "min_position": "3",
+                "min_id": "20015",
+                "max_position": "90",
+                "max_id": "24929",
+                "products_assigned": "91"
+            },
+            "22": {
+                "category_id": "22",
+                "min_position": "1",
+                "min_id": "20023",
+                "max_position": "82",
+                "max_id": "24901",
+                "products_assigned": "85"
+            },
+            "23": {
+                "category_id": "23",
+                "min_position": "2",
+                "min_id": "20023",
+                "max_position": "122",
+                "max_id": "24901",
+                "products_assigned": "123"
+            },
+            "24": {
+                "category_id": "24",
+                "min_position": "1",
+                "min_id": "20071",
+                "max_position": "115",
+                "max_id": "24977",
+                "products_assigned": "115"
+            },
+            "26": {
+                "category_id": "26",
+                "min_position": "1",
+                "min_id": "20012",
+                "max_position": "111",
+                "max_id": "24994",
+                "products_assigned": "116"
+            },
+            "27": {
+                "category_id": "27",
+                "min_position": "1",
+                "min_id": "20012",
+                "max_position": "88",
+                "max_id": "24865",
+                "products_assigned": "90"
+            },
+            "28": {
+                "category_id": "28",
+                "min_position": "1",
+                "min_id": "20012",
+                "max_position": "84",
+                "max_id": "24915",
+                "products_assigned": "85"
+            },
+            "29": {
+                "category_id": "29",
+                "min_position": "1",
+                "min_id": "20011",
+                "max_position": "105",
+                "max_id": "24920",
+                "products_assigned": "105"
+            },
+            "30": {
+                "category_id": "30",
+                "min_position": "2",
+                "min_id": "20050",
+                "max_position": "108",
+                "max_id": "24997",
+                "products_assigned": "108"
+            },
+            "31": {
+                "category_id": "31",
+                "min_position": "3",
+                "min_id": "20025",
+                "max_position": "95",
+                "max_id": "24911",
+                "products_assigned": "95"
+            },
+            "32": {
+                "category_id": "32",
+                "min_position": "1",
+                "min_id": "20014",
+                "max_position": "106",
+                "max_id": "24954",
+                "products_assigned": "106"
+            },
+            "33": {
+                "category_id": "33",
+                "min_position": "1",
+                "min_id": "20011",
+                "max_position": "105",
+                "max_id": "24997",
+                "products_assigned": "105"
+            },
+            "34": {
+                "category_id": "34",
+                "min_position": "1",
+                "min_id": "20011",
+                "max_position": "111",
+                "max_id": "24933",
+                "products_assigned": "111"
+            },
+            "35": {
+                "category_id": "35",
+                "min_position": "1",
+                "min_id": "20025",
+                "max_position": "102",
+                "max_id": "24997",
+                "products_assigned": "102"
+            },
+            "37": {
+                "category_id": "37",
+                "min_position": "3",
+                "min_id": "20132",
+                "max_position": "83",
+                "max_id": "24989",
+                "products_assigned": "83"
+            },
+            "38": {
+                "category_id": "38",
+                "min_position": "1",
+                "min_id": "20060",
+                "max_position": "86",
+                "max_id": "24968",
+                "products_assigned": "86"
+            },
+            "39": {
+                "category_id": "39",
+                "min_position": "1",
+                "min_id": "20041",
+                "max_position": "118",
+                "max_id": "24989",
+                "products_assigned": "120"
+            },
+            "40": {
+                "category_id": "40",
+                "min_position": "2",
+                "min_id": "20041",
+                "max_position": "106",
+                "max_id": "24931",
+                "products_assigned": "107"
+            },
+            "41": {
+                "category_id": "41",
+                "min_position": "3",
+                "min_id": "20049",
+                "max_position": "108",
+                "max_id": "24989",
+                "products_assigned": "108"
+            },
+            "42": {
+                "category_id": "42",
+                "min_position": "1",
+                "min_id": "20047",
+                "max_position": "101",
+                "max_id": "24969",
+                "products_assigned": "103"
+            },
+            "43": {
+                "category_id": "43",
+                "min_position": "1",
+                "min_id": "20005",
+                "max_position": "97",
+                "max_id": "24950",
+                "products_assigned": "97"
+            },
+            "44": {
+                "category_id": "44",
+                "min_position": "1",
+                "min_id": "20005",
+                "max_position": "88",
+                "max_id": "24924",
+                "products_assigned": "88"
+            },
+            "45": {
+                "category_id": "45",
+                "min_position": "2",
+                "min_id": "20005",
+                "max_position": "106",
+                "max_id": "24969",
+                "products_assigned": "106"
+            },
+            "46": {
+                "category_id": "46",
+                "min_position": "2",
+                "min_id": "20114",
+                "max_position": "101",
+                "max_id": "24938",
+                "products_assigned": "102"
+            },
+            "48": {
+                "category_id": "48",
+                "min_position": "2",
+                "min_id": "20026",
+                "max_position": "111",
+                "max_id": "24990",
+                "products_assigned": "111"
+            },
+            "49": {
+                "category_id": "49",
+                "min_position": "3",
+                "min_id": "20159",
+                "max_position": "98",
+                "max_id": "24981",
+                "products_assigned": "98"
+            },
+            "50": {
+                "category_id": "50",
+                "min_position": "1",
+                "min_id": "20017",
+                "max_position": "94",
+                "max_id": "24960",
+                "products_assigned": "94"
+            },
+            "51": {
+                "category_id": "51",
+                "min_position": "4",
+                "min_id": "20017",
+                "max_position": "94",
+                "max_id": "24981",
+                "products_assigned": "95"
+            },
+            "52": {
+                "category_id": "52",
+                "min_position": "1",
+                "min_id": "20067",
+                "max_position": "107",
+                "max_id": "24919",
+                "products_assigned": "107"
+            },
+            "53": {
+                "category_id": "53",
+                "min_position": "1",
+                "min_id": "20100",
+                "max_position": "102",
+                "max_id": "24990",
+                "products_assigned": "102"
+            },
+            "54": {
+                "category_id": "54",
+                "min_position": "2",
+                "min_id": "20057",
+                "max_position": "88",
+                "max_id": "24910",
+                "products_assigned": "88"
+            },
+            "55": {
+                "category_id": "55",
+                "min_position": "1",
+                "min_id": "20017",
+                "max_position": "82",
+                "max_id": "24960",
+                "products_assigned": "85"
+            },
+            "56": {
+                "category_id": "56",
+                "min_position": "2",
+                "min_id": "20033",
+                "max_position": "100",
+                "max_id": "24981",
+                "products_assigned": "102"
+            },
+            "57": {
+                "category_id": "57",
+                "min_position": "1",
+                "min_id": "20057",
+                "max_position": "100",
+                "max_id": "24959",
+                "products_assigned": "100"
+            },
+            "59": {
+                "category_id": "59",
+                "min_position": "2",
+                "min_id": "20084",
+                "max_position": "103",
+                "max_id": "24971",
+                "products_assigned": "104"
+            },
+            "60": {
+                "category_id": "60",
+                "min_position": "1",
+                "min_id": "20072",
+                "max_position": "104",
+                "max_id": "24972",
+                "products_assigned": "105"
+            },
+            "61": {
+                "category_id": "61",
+                "min_position": "1",
+                "min_id": "20072",
+                "max_position": "101",
+                "max_id": "24996",
+                "products_assigned": "101"
+            },
+            "62": {
+                "category_id": "62",
+                "min_position": "1",
+                "min_id": "20084",
+                "max_position": "94",
+                "max_id": "24999",
+                "products_assigned": "96"
+            },
+            "63": {
+                "category_id": "63",
+                "min_position": "1",
+                "min_id": "20072",
+                "max_position": "96",
+                "max_id": "24999",
+                "products_assigned": "97"
+            },
+            "64": {
+                "category_id": "64",
+                "min_position": "2",
+                "min_id": "20128",
+                "max_position": "104",
+                "max_id": "24971",
+                "products_assigned": "106"
+            },
+            "65": {
+                "category_id": "65",
+                "min_position": "1",
+                "min_id": "20148",
+                "max_position": "108",
+                "max_id": "24961",
+                "products_assigned": "108"
+            },
+            "66": {
+                "category_id": "66",
+                "min_position": "1",
+                "min_id": "20084",
+                "max_position": "84",
+                "max_id": "24985",
+                "products_assigned": "85"
+            },
+            "67": {
+                "category_id": "67",
+                "min_position": "1",
+                "min_id": "20148",
+                "max_position": "94",
+                "max_id": "24972",
+                "products_assigned": "94"
+            },
+            "68": {
+                "category_id": "68",
+                "min_position": "2",
+                "min_id": "20252",
+                "max_position": "102",
+                "max_id": "24996",
+                "products_assigned": "104"
+            },
+            "70": {
+                "category_id": "70",
+                "min_position": "1",
+                "min_id": "20008",
+                "max_position": "111",
+                "max_id": "25000",
+                "products_assigned": "111"
+            },
+            "71": {
+                "category_id": "71",
+                "min_position": "1",
+                "min_id": "20039",
+                "max_position": "91",
+                "max_id": "24986",
+                "products_assigned": "91"
+            },
+            "72": {
+                "category_id": "72",
+                "min_position": "1",
+                "min_id": "20024",
+                "max_position": "102",
+                "max_id": "25000",
+                "products_assigned": "103"
+            },
+            "73": {
+                "category_id": "73",
+                "min_position": "1",
+                "min_id": "20092",
+                "max_position": "99",
+                "max_id": "24992",
+                "products_assigned": "99"
+            },
+            "74": {
+                "category_id": "74",
+                "min_position": "1",
+                "min_id": "20007",
+                "max_position": "90",
+                "max_id": "24992",
+                "products_assigned": "90"
+            },
+            "75": {
+                "category_id": "75",
+                "min_position": "1",
+                "min_id": "20064",
+                "max_position": "92",
+                "max_id": "24991",
+                "products_assigned": "94"
+            },
+            "76": {
+                "category_id": "76",
+                "min_position": "1",
+                "min_id": "20007",
+                "max_position": "107",
+                "max_id": "25000",
+                "products_assigned": "107"
+            },
+            "77": {
+                "category_id": "77",
+                "min_position": "1",
+                "min_id": "20038",
+                "max_position": "96",
+                "max_id": "24940",
+                "products_assigned": "96"
+            },
+            "78": {
+                "category_id": "78",
+                "min_position": "1",
+                "min_id": "20008",
+                "max_position": "102",
+                "max_id": "24986",
+                "products_assigned": "102"
+            },
+            "79": {
+                "category_id": "79",
+                "min_position": "2",
+                "min_id": "20092",
+                "max_position": "127",
+                "max_id": "24874",
+                "products_assigned": "127"
+            },
+            "81": {
+                "category_id": "81",
+                "min_position": "3",
+                "min_id": "20020",
+                "max_position": "104",
+                "max_id": "24975",
+                "products_assigned": "104"
+            },
+            "82": {
+                "category_id": "82",
+                "min_position": "1",
+                "min_id": "20019",
+                "max_position": "116",
+                "max_id": "24975",
+                "products_assigned": "117"
+            },
+            "83": {
+                "category_id": "83",
+                "min_position": "1",
+                "min_id": "20162",
+                "max_position": "115",
+                "max_id": "24937",
+                "products_assigned": "115"
+            },
+            "84": {
+                "category_id": "84",
+                "min_position": "1",
+                "min_id": "20043",
+                "max_position": "121",
+                "max_id": "24956",
+                "products_assigned": "121"
+            },
+            "85": {
+                "category_id": "85",
+                "min_position": "2",
+                "min_id": "20019",
+                "max_position": "106",
+                "max_id": "24964",
+                "products_assigned": "111"
+            },
+            "86": {
+                "category_id": "86",
+                "min_position": "5",
+                "min_id": "20207",
+                "max_position": "113",
+                "max_id": "24956",
+                "products_assigned": "113"
+            },
+            "87": {
+                "category_id": "87",
+                "min_position": "2",
+                "min_id": "20065",
+                "max_position": "95",
+                "max_id": "24903",
+                "products_assigned": "97"
+            },
+            "88": {
+                "category_id": "88",
+                "min_position": "2",
+                "min_id": "20019",
+                "max_position": "110",
+                "max_id": "24965",
+                "products_assigned": "110"
+            },
+            "89": {
+                "category_id": "89",
+                "min_position": "1",
+                "min_id": "20043",
+                "max_position": "99",
+                "max_id": "24937",
+                "products_assigned": "99"
+            },
+            "90": {
+                "category_id": "90",
+                "min_position": "1",
+                "min_id": "20020",
+                "max_position": "116",
+                "max_id": "24965",
+                "products_assigned": "116"
+            }
+        }
+    },
+    "virtual": {
+        "label": "Virtual Product",
+        "total": "0",
+        "enabled": "0",
+        "visible_in_catalog": "0",
+        "visible_in_search": "0",
+        "in_category": "0",
+        "in_configurable": "0",
+        "position_summary": [],
+        "category_summary": []
+    },
+    "bundle": {
+        "label": "Bundle Product",
+        "total": "0",
+        "enabled": "0",
+        "visible_in_catalog": "0",
+        "visible_in_search": "0",
+        "in_category": "0",
+        "in_configurable": "0",
+        "position_summary": [],
+        "category_summary": []
+    },
+    "downloadable": {
+        "label": "Downloadable Product",
+        "total": "0",
+        "enabled": "0",
+        "visible_in_catalog": "0",
+        "visible_in_search": "0",
+        "in_category": "0",
+        "in_configurable": "0",
+        "position_summary": [],
+        "category_summary": []
+    }
+}

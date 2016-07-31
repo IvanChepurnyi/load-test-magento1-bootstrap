@@ -1,0 +1,3 @@
+src/module/                                  app/code/local/EcomDev/BenchmarkDataTool
+src/shell/ecomdev-benchmark-data-tool.php    shell/ecomdev-benchmark-data-tool.php
+src/etc/EcomDev_BenchmarkDataTool.xml        app/etc/modules/EcomDev_BenchmarkDataTool.xml

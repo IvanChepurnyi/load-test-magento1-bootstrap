@@ -7,6 +7,10 @@
      "ecomdev/magento-1-changes": "*",
      "inchoo/php7": "*"
   },
+  "require-dev": {
+     "ecomdev/magento-1-data-tool": "*",
+     "league/csv": "*"
+  },
   "repositories": [
     {
       "type": "vcs",
@@ -15,13 +19,18 @@
     {
       "type": "path",
       "url": "./project"
+    },
+    {
+      "type": "path",
+      "url": "./data-tool"
     }
   ],
   "minimum-stability":"dev",
   "config": {
     "optimize-autoloader": true,
     "classmap-authoritative": true,
-    "prepend-autoloader": true
+    "prepend-autoloader": true,
+    "prefer-dist": true
   },
   "extra": {
     "magento-root-dir": "magento",
