@@ -41,9 +41,9 @@ ln -sf $path/magento ../public
 
 databaseFile=db/data.sql.gz
 
-if [ -f $dir/db/data-$databaseVersion-$version.sql.gz ]
+if [ -f $dir/db/data-$version-$databaseVersion.sql.gz ]
 then
-   databaseFile=$dir/db/data-$databaseVersion-$version.sql.gz
+   databaseFile=$dir/db/data-$version-$databaseVersion.sql.gz
 elif [ -f $dir/db/data-$databaseVersion.sql.gz ]
 then
    databaseFile=$dir/db/data-$databaseVersion.sql.gz
