@@ -39,15 +39,21 @@ rm ../public/*.txt
 rmdir ../public
 ln -sf $path/magento ../public
 
-databaseFile=db/data.sql.gz
+dbfile=$dir/db/data.sql.gz
 
-if [ -f $dir/db/data-$version-$databaseVersion.sql.gz ]
+if [ -f $dir/db/data-$databaseVersion-$version.sql.gz ]
 then
-   databaseFile=$dir/db/data-$version-$databaseVersion.sql.gz
+   dbfile=$dir/db/data-$databaseVersion-$version.sql.gz
+elif [ -f $dir/db/data-$version.sql.gz ]
+then
+   dbfile=$dir/db/data-$version.sql.gz
 elif [ -f $dir/db/data-$databaseVersion.sql.gz ]
 then
-   databaseFile=$dir/db/data-$databaseVersion.sql.gz
+   dbfile=$dir/db/data-$databaseVersion.sql.gz
 fi
+
+echo "Importing $dbfile"
+databaseFile=$dbfile
 
 # Import database
 mysql -e "drop database if exists $database; create database $database;"
