@@ -1,6 +1,35 @@
 <layout>
+    <default>
+       <reference name="varnish.token.js">
+            <action method="addObservedCssRule"><css>.item .actions .btn-cart</css></action>
+       </reference>
+    </default>
+
     <default_esi>
+        <reference name="root">
+            <action method="unsetChild"><name>header</name></action>
+            <action method="unsetChild"><name>footer</name></action>
+            <block type="ecomdev_varnish/esi_tag" name="header.esi" as="header">
+                <action method="addHandle"><handle>default</handle></action>
+                <action method="addHandle"><handle>default_esi_include</handle></action>
+                <action method="setCookies"><flag>0</flag></action>
+                <action method="setBlockName"><blockName>header</blockName></action>
+            </block>
+            <block type="ecomdev_varnish/esi_tag" name="footer.esi" as="footer">
+                <action method="addHandle"><handle>default</handle></action>
+                <action method="addHandle"><handle>default_esi_include</handle></action>
+                <action method="setCookies"><flag>0</flag></action>
+                <action method="setBlockName"><blockName>footer</blockName></action>
+            </block>
+        </reference>
+    </default_esi>
+
+    <default_esi_include>
         <reference name="header">
+            <action method="unsetChild">
+                <blockName>minicart</blockName>
+            </action>
+
             <action method="unsetChild">
                 <blockName>minicart_head</blockName>
             </action>
@@ -11,5 +40,10 @@
                 <action method="setBlockName"><block>minicart_head</block></action>
             </block>
         </reference>
-    </default_esi>
+
+        <reference name="footer">
+            <action method="unsetData"><key>cache_lifetime</key></action>
+        </reference>
+    </default_esi_include>
+
 </layout>

@@ -75,6 +75,9 @@ n98-magerun config:set web/secure/base_url http://$domain/
 n98-magerun config:set dev/template/allow_symlink 1
 n98-magerun config:set catalog/frontend/flat_catalog_category 1
 n98-magerun config:set catalog/frontend/flat_catalog_product 1
+n98-magerun config:set varnish/settings/active  1
+n98-magerun config:set varnish/settings/esi_key $(openssl rand 16 -hex)
+
 n98-magerun cache:flush
 n98-magerun cache:enable
 
