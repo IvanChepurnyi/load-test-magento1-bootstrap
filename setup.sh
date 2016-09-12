@@ -54,36 +54,66 @@ fi
 
 echo "Importing $dbfile"
 databaseFile=$dbfile
+baseDbFile=$(basename $databaseFile)
 
-# Import database
-mysql -e "drop database if exists $database; create database $database;"
-MYSQLPASSWORD=$(awk -F "=" '/password/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
-MYSQLUSER=$(awk -F "=" '/user/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
-MYSQLHOST=$(awk -F "=" '/host/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
-gunzip < $databaseFile | mysql $database
+function cache_magento() {
+   mkdir -p $HOME/cache/$path
+   cp app/etc/local.xml $HOME/cache/$path/local.xml
+   mysqldump $database | gzip -c > $HOME/cache/$path/$baseDbFile
+}
 
-# Install magento configure it
-n98-magerun install --dbHost="$MYSQLHOST" --dbUser="$MYSQLUSER" --dbPass="$MYSQLPASSWORD" --dbName="$database" \
-    --installSampleData=yes --useDefaultConfigParams=yes --noDownload \
-    --installationFolder="magento" --baseUrl="http://$domain/" --forceUseDb
+function try_restore_from_cache() {
+   cd $dir/magento
+   if [ ! -d $HOME/cache ]
+   then
+      setup_magento
+   elif [ -f $HOME/cache/$path/$baseDbFile -a -f $HOME/cache/$path/local.xml ]
+   then
+      cp $HOME/cache/$path/local.xml app/etc/local.xml
+      mysql -e "drop database if exists $database; create database $database;"
+      gunzip < $HOME/cache/$path/$baseDbFile | mysql $database
+      n98-magerun cache:flush
+      n98-magerun cache:enable
+   else
+      setup_magento
+      cache_magento
+   fi
+}
 
-cd magento/
+function setup_magento() {
+   # Import database
+   mysql -e "drop database if exists $database; create database $database;"
+   MYSQLPASSWORD=$(awk -F "=" '/password/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
+   MYSQLUSER=$(awk -F "=" '/user/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
+   MYSQLHOST=$(awk -F "=" '/host/ {print $2}' ${HOME}/.my.cnf | sed -e 's/^[ \t]*//')
+   gunzip < $databaseFile | mysql $database
 
-n98-magerun config:set design/package/name benchmark
-n98-magerun config:set web/unsecure/base_url http://$domain/
-n98-magerun config:set web/secure/base_url http://$domain/
-n98-magerun config:set dev/template/allow_symlink 1
-n98-magerun config:set catalog/frontend/flat_catalog_category 1
-n98-magerun config:set catalog/frontend/flat_catalog_product 1
-n98-magerun config:set varnish/settings/active  1
-n98-magerun config:set varnish/settings/esi_key $(openssl rand 16 -hex)
+   cd $dir
+   # Install magento configure it
+   n98-magerun install --dbHost="$MYSQLHOST" --dbUser="$MYSQLUSER" --dbPass="$MYSQLPASSWORD" --dbName="$database" \
+       --installSampleData=yes --useDefaultConfigParams=yes --noDownload \
+       --installationFolder="magento" --baseUrl="http://$domain/" --forceUseDb
 
-n98-magerun cache:flush
-n98-magerun cache:enable
+   cd $dir/magento/
 
-# We have to re-index only flat and category index, as others are up-to date during install process
-n98-magerun index:reindex catalog_product_flat
-n98-magerun index:reindex catalog_category_flat
+   n98-magerun config:set design/package/name benchmark
+   n98-magerun config:set web/unsecure/base_url http://$domain/
+   n98-magerun config:set web/secure/base_url http://$domain/
+   n98-magerun config:set dev/template/allow_symlink 1
+   n98-magerun config:set catalog/frontend/flat_catalog_category 1
+   n98-magerun config:set catalog/frontend/flat_catalog_product 1
+   n98-magerun config:set varnish/settings/active  1
+   n98-magerun config:set varnish/settings/esi_key $(openssl rand 16 -hex)
+
+   n98-magerun cache:flush
+   n98-magerun cache:enable
+
+   # We have to re-index only flat and category index, as others are up-to date during install process
+   n98-magerun index:reindex catalog_product_flat
+   n98-magerun index:reindex catalog_category_flat
+}
+
+try_restore_from_cache
 
 # Install varnish VCL
 php shell/ecomdev-varnish.php vcl:generate -c $dir/config/vcl.json -v 4 > varnish.vcl
@@ -91,4 +121,7 @@ php shell/ecomdev-varnish.php vcl:generate -c $dir/config/vcl.json -v 4 > varnis
 varnishadm vcl.load m1benchmark $PWD/varnish.vcl
 varnishadm vcl.use m1benchmark
 
-bash $dir/config/media.sh $dir/magento $dir/config/media.set $dir/config/media
+if [[ $NO_IMAGES == "" ]]
+then
+    bash $dir/config/media.sh $dir/magento $dir/config/media.set $dir/config/media
+fi
